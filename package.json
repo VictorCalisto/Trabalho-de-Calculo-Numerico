@@ -2,9 +2,9 @@
   "name": "trabalho-de-calculo-numerico",
   "version": "1.0.0",
   "description": "2023, Universidade Alfa, Prof Bruno Diniz",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "index.html"
+    "start": "index.js"
   },
   "keywords": [],
   "author": "Victor Calisto",
