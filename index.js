@@ -4,11 +4,11 @@ const path = require('path');
 const app = express();
 
 // configurar o Express.js para servir arquivos estáticos da pasta "public"
-app.use(express.static(path.join(__dirname, 'Trabalho-de-Calculo-Numerico')));
+app.use(express.static(path.join(__dirname, '/')));
 
 // configurar o Express.js para servir o arquivo "index.html" na raiz do aplicativo
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Trabalho-de-Calculo-Numerico', 'index.html'));
+  res.sendFile(path.join(__dirname, '/', 'index.html'));
 });
 
 // iniciar o servidor HTTP na porta 3000
