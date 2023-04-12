@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Método de Newton-Raphson</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/reset.css">
+        <link rel="stylesheet" href="../CSS/simple.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Método de Newton-Raphson</h1>
+                <form id="formulario">
+                    <label for="funcao" id="textoFuncao">Escolha uma função.</label>
+                    <select id="funcao">
+                        <option value="funcao1" >f(x)=x²-1</option>
+                        <option value="funcao2">f(x)=sen(x)</option>
+                        <option value="funcao3">f(x)=x⁴-20x²+64</option>
+                    </select><br>
+                    <label for="aproximacao" id="textoAproximacao">Digite a aproximação da raiz</label><br>
+                    <input type="number" step="any" id="aproximacao" required autofocus><br>
+                    <label for="erro" id="textoErro">Digite o erro tolerado</label><br>
+                    <input type="number" step="any" id="erro" max="0.1" min="0.00000000001" placeholder="0.01" required><br>
+                    <button type="submit" id="enviar">Enviar</button>
+                </form>
+                <b><p id="textoFinal"></p></b>
+            </section>
+            <section>
+                <p>O Método de Newton-Raphson é uma técnica numérica utilizada para encontrar as raízes de uma função. Ele é baseado na ideia de aproximar a função por meio da reta tangente em um ponto inicial e, a partir dessa reta, estimar a próxima aproximação da raiz. Esse processo é repetido até que se atinja a precisão desejada.
+                </p><br>
+                <p>O Método de Newton-Raphson tem como principal vantagem a sua rapidez de convergência. Em muitos casos, é possível atingir a precisão desejada em poucas iterações. No entanto, ele tem algumas limitações, como a necessidade de um valor inicial próximo à raiz e a possibilidade de convergência para um ponto que não é a raiz desejada.
+                </p><br>
+                <p>Uma das principais aplicações do Método de Newton-Raphson é em problemas de otimização. Ele é comumente utilizado para encontrar o mínimo ou o máximo de uma função. Nesse caso, a técnica é aplicada para encontrar a raiz da derivada da função, que representa o ponto de mínimo ou máximo da função original.
+                </p><br>
+                </section>
+        </main>
+        <script src="../JS/newton.js"></script>
+        <footer >
+            <p>&copy; 2023. Feito para a disciplina de Cálculo Numerio.</p>
+        </footer>
+    </body>
+</html>

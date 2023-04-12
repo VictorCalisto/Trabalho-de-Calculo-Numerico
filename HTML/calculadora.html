@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/reset.css">
+        <link rel="stylesheet" href="../CSS/simple.css">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Calculadora</h1>
+                <form id="formulario">
+                    <label for="entrada" id="textoEntrada">Digite a base atual:</label><br>
+                    <input type="number" id="entrada" step="1" min="2" max="36" required autofocus><br>
+                    <button type="submit" id="enviar">Enviar</button><br>
+                </form>
+                <p id="textoFinal">A base escolhida deve ser um número inteiro entre [2;36]</p><br>
+            </section>
+            <section>
+                <p>A calculadora é ideal para quem deseja converter valores em diferentes bases numéricas. Com ela, você pode escolher a base desejada - por exemplo 2 - e inserir um valor decimal, ou seja, em base 10. A calculadora fará a conversão desse valor para a base escolhida, no exemplo, binário. Se desejar pode trocar essa a ordem e converter da base desejada para decimal. Com essa ferramenta, você pode realizar conversões de forma rápida e prática, facilitando o seu dia a dia. Experimente agora mesmo!</p>
+            </section>
+        </main>
+        <script src="../JS/calculadora.js"></script>
+        <footer >
+            <p>&copy; 2023. Feito para a disciplina de Cálculo Numerio.</p>
+        </footer>
+    </body>
+</html>

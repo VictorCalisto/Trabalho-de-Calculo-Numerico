@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Método da Bissecção</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/reset.css">
+        <link rel="stylesheet" href="../CSS/simple.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Método da Bissecção</h1>
+                <form id="formulario">
+                    <label for="funcao" id="textoFuncao">Escolha uma função.</label>
+                    <select id="funcao">
+                        <option value="funcao1" >f(x)=x²-1</option>
+                        <option value="funcao2">f(x)=sen(x)</option>
+                        <option value="funcao3">f(x)=x⁴-20x²+64</option>
+                        <option value="funcao4">Digite a funcao</option>
+                    </select><br>
+                    <label for="limiteInferior" id="textoLimiteInferior">Digite o limite inferior</label><br>
+                    <input type="number" step="any" id="limiteInferior" required autofocus><br>
+                    <label for="limiteSuperior" id="textoLimiteSuperior">Digite o limite superior</label><br>
+                    <input type="number" step="any" id="limiteSuperior" required><br>
+                    <label for="erro" id="textoErro">Digite o erro tolerado</label><br>
+                    <input type="number" step="any" id="erro" max="0.1" min="0.00000000001" placeholder="0.01" required><br>
+                    <label for="fucaoDigitada" id="textoFuncaoDigitada" style="visibility:hidden">Digite em JavaScript a sua funcao</label><br>
+                    <input type="text" id="funcaoDigitada" placeholder="Math.cos(x)" pattern="[a-zA-Z0-9(),.*/+\-]+" style="visibility:hidden"><br>
+                    <button type="submit" id="enviar">Enviar</button>
+                </form>
+                <b><p id="textoFinal"></p></b>
+            </section>
+            <section>
+                <p>O método da bissecção é um algoritmo numérico utilizado para encontrar raízes de funções em um determinado intervalo. Este método é baseado no teorema do valor intermediário, que afirma que, se uma função contínua muda de sinal em um intervalo, então existe pelo menos uma raiz nesse intervalo.
+                </p><br>
+                <p>O método da bissecção consiste em dividir o intervalo em duas partes iguais e verificar em qual delas a função tem sinais opostos. O processo é repetido para a metade que contém a raiz até que se obtenha uma aproximação desejada. Esse método é relativamente simples e garante a convergência, desde que a função seja contínua e mude de sinal no intervalo considerado.
+                </p><br>
+                <p>Uma das vantagens do método da bissecção é que ele é fácil de implementar e não exige conhecimento prévio sobre a função. No entanto, o método pode ser lento para convergir, especialmente se a função tem um comportamento complexo ou se o intervalo inicial é muito grande.
+                </p>
+            </section>
+        </main>
+        <script src="../JS/bisseccao.js"></script>
+        <footer >
+            <p>&copy; 2023. Feito para a disciplina de Cálculo Numerio.</p>
+        </footer>
+    </body>
+</html>
