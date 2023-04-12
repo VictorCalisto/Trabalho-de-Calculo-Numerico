@@ -4,7 +4,7 @@
   "description": "2023, Universidade Alfa, Prof Bruno Diniz",
   "main": "index.js",
   "scripts": {
-    "start": "index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Victor Calisto",
