@@ -11,30 +11,31 @@ app.get('/', (req, res) => {
 });
 
 app.get('/index.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'HTML', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/calculadora', (req, res) => {
+app.get('/HTML/calculadora.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'calculadora.html'));
 });
 
-app.get('/bisseccao', (req, res) => {
+app.get('/HTML/bisseccao.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'bisseccao.html'));
 });
 
-app.get('/newton', (req, res) => {
+app.get('/HTML/newton.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'newton.html'));
 });
 
-app.get('/cordas', (req, res) => {
+app.get('/HTML/cordas.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'cordas.html'));
 });
 
-app.get('/secante', (req, res) => {
+app.get('/HTML/secante.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
 });
 
 // Definir porta do servidor
-app.listen( process.env.PORT || 3000, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
