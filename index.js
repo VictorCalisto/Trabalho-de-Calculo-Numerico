@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'JS')));
 
 // Definir rota para o arquivo index.html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html');
 });
 
 // Definir porta do servidor
