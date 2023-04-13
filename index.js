@@ -30,13 +30,13 @@ app.get('/HTML/cordas.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'cordas.html'));
 });
 
-app.get('/HTML/secante.html', (req, res) => {
+app.get('/secante.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
 });
 
-app.get('/HTML/secante.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
-});
+// app.get('/HTML/secante.html', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
+// });
 
 // Definir porta do servidor
 const port = process.env.PORT || 3000;
