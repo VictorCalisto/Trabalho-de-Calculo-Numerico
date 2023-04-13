@@ -14,29 +14,25 @@ app.get('/index.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/HTML/calculadora.html', (req, res) => {
+app.get('/calculadora.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'calculadora.html'));
 });
 
-app.get('/HTML/bisseccao.html', (req, res) => {
+app.get('/bisseccao.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'bisseccao.html'));
 });
 
-app.get('/HTML/newton.html', (req, res) => {
+app.get('/newton.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'newton.html'));
 });
 
-app.get('/HTML/cordas.html', (req, res) => {
+app.get('/cordas.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'cordas.html'));
 });
 
 app.get('/secante.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
 });
-
-// app.get('/HTML/secante.html', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
-// });
 
 // Definir porta do servidor
 const port = process.env.PORT || 3000;
