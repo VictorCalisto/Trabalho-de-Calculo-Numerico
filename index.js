@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, 'CSS')));
 app.use(express.static(path.join(__dirname, 'JS')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile('index.html'));
 });
 
 app.get('/index.html', (req, res) => {
