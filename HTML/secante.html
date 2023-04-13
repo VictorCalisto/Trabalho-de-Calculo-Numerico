@@ -19,7 +19,7 @@
         </header>
         <main>
             <section>
-                <h1>Método da Secante</h1>
+                <h1>Método da Secante</h1><br>
                 <form id="formulario">
                     <label for="funcao" id="textoFuncao">Escolha uma função.</label>
                     <select id="funcao">
@@ -27,15 +27,15 @@
                         <option value="funcao2">f(x)=sen(x)</option>
                         <option value="funcao3">f(x)=x⁴-20x²+64</option>
                         <option value="funcao4">Digite a funcao</option>
-                    </select><br>
-                    <label for="limiteInferior" id="textoLimiteInferior">Digite o limite inferior</label><br>
-                    <input type="number" step="any" id="limiteInferior" required autofocus><br>
-                    <label for="limiteSuperior" id="textoLimiteSuperior">Digite o limite superior</label><br>
-                    <input type="number" step="any" id="limiteSuperior" required><br>
-                    <label for="erro" id="textoErro">Digite o erro tolerado</label><br>
-                    <input type="number" step="any" id="erro" max="0.1" min="0.00000000001" placeholder="0.01" required><br>
-                    <label for="fucaoDigitada" id="textoFuncaoDigitada" style="visibility:hidden">Digite em JavaScript a sua funcao</label><br>
-                    <input type="text" id="funcaoDigitada" placeholder="Math.cos(x)" pattern="[a-zA-Z0-9(),.*/+\-]+" style="visibility:hidden"><br>
+                    </select>
+                    <label for="limiteInferior" id="textoLimiteInferior">Digite o limite inferior</label>
+                    <input type="number" step="any" id="limiteInferior" required autofocus>
+                    <label for="limiteSuperior" id="textoLimiteSuperior">Digite o limite superior</label>
+                    <input type="number" step="any" id="limiteSuperior" required>
+                    <label for="erro" id="textoErro">Digite o erro tolerado</label>
+                    <input type="number" step="any" id="erro" max="0.1" min="0.00000000001" placeholder="0.01" required>
+                    <label for="fucaoDigitada" id="textoFuncaoDigitada" style="visibility:hidden">Digite em JavaScript a sua funcao</label>
+                    <input type="text" id="funcaoDigitada" placeholder="Math.cos(x)" pattern="[a-zA-Z0-9(),.*/+\-]+" style="visibility:hidden">
                     <button type="submit" id="enviar">Enviar</button>
                 </form>
                 <b><p id="textoFinal"></p></b>
