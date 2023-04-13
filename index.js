@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 // Definir rota para outras páginas HTML
-app.get('/:pagina.html', (req, res) => {
+app.get('/pagina.html', (req, res) => {
   const pagina = req.params.pagina;
   const arquivo = path.join(__dirname, 'HTML', `${pagina}.html`);
   res.sendFile(arquivo);
