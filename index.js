@@ -9,11 +9,10 @@ app.use(express.static(path.join(__dirname, 'JS')));
 
 // Definir rota para o arquivo index.html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Definir porta do servidor
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
+app.listen( process.env.PORT || 3000, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
