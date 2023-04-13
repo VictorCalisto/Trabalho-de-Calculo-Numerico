@@ -17,7 +17,8 @@ const LIMITE_DE_ITERACAO = 100;
 
 formulario.addEventListener('submit',(evento)=>{
     evento.preventDefault();
-    if(limiteInferior.value>limiteSuperior.value){
+    
+    if(parseFloat(limiteInferior.value)>parseFloat(limiteSuperior.value)){
         alert('O limite superior deve ser maior do inferior.');
     }else{
         if (funcao.value=='funcao1'){
