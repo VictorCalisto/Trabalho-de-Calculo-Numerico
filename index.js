@@ -14,25 +14,30 @@ app.get('/index.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/calculadora.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'HTML', 'calculadora.html'));
+app.get('/:pagina.html', (req, res) => {
+  const pagina = req.params.pagina;
+  res.sendFile(path.join(__dirname, 'HTML', `${pagina}.html`));
 });
 
-app.get('/bisseccao.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'HTML', 'bisseccao.html'));
-});
+// app.get('/calculadora.html', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'HTML', 'calculadora.html'));
+// });
 
-app.get('/newton.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'HTML', 'newton.html'));
-});
+// app.get('/bisseccao.html', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'HTML', 'bisseccao.html'));
+// });
 
-app.get('/cordas.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'HTML', 'cordas.html'));
-});
+// app.get('/newton.html', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'HTML', 'newton.html'));
+// });
 
-app.get('/secante.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
-});
+// app.get('/cordas.html', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'HTML', 'cordas.html'));
+// });
+
+// app.get('/secante.html', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
+// });
 
 // Definir porta do servidor
 const port = process.env.PORT || 3000;
