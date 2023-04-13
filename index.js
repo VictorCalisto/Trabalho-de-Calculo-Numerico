@@ -2,20 +2,36 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-// Definir caminhos para arquivos estáticos
+app.use(express.static(path.join(__dirname, 'HTML')));
 app.use(express.static(path.join(__dirname, 'CSS')));
 app.use(express.static(path.join(__dirname, 'JS')));
 
-// Definir rota para o arquivo index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Definir rota para outras páginas HTML
-app.get('/pagina.html', (req, res) => {
-  const pagina = req.params.pagina;
-  const arquivo = path.join(__dirname, 'HTML', `${pagina}.html`);
-  res.sendFile(arquivo);
+app.get('/index.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'HTML', 'index.html'));
+});
+
+app.get('/calculadora', (req, res) => {
+  res.sendFile(path.join(__dirname, 'HTML', 'calculadora.html'));
+});
+
+app.get('/bisseccao', (req, res) => {
+  res.sendFile(path.join(__dirname, 'HTML', 'bisseccao.html'));
+});
+
+app.get('/newton', (req, res) => {
+  res.sendFile(path.join(__dirname, 'HTML', 'newton.html'));
+});
+
+app.get('/cordas', (req, res) => {
+  res.sendFile(path.join(__dirname, 'HTML', 'cordas.html'));
+});
+
+app.get('/secante', (req, res) => {
+  res.sendFile(path.join(__dirname, 'HTML', 'secante.html'));
 });
 
 // Definir porta do servidor
