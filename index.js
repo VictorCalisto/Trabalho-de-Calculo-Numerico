@@ -2,10 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.use(express.static(path.join(__dirname, 'HTML')));
-app.use(express.static(path.join(__dirname, 'CSS')));
-app.use(express.static(path.join(__dirname, 'JS')));
-
 app.get('/', (req, res) => {
   res.sendFile('index.html'));
 });
