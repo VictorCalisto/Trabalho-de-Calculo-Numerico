@@ -10,3 +10,7 @@ package.json
 ### No servidor
 A aplicação web esta disponivel contando 20 dias a apartir de 12/04/2023 no site:
 https://trabalho-de-calculo-numerico-production.up.railway.app/
+
+### GitHub
+O código é aberto e você pode baixa-ló no link:
+https://github.com/VictorCalisto/trabalho-de-calculo-numerico
